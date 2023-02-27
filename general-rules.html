@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Linking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Title Of Page -->
+    <title>DLOTT</title>
+</head>
+
+<body class="min-vh-100">
+
+    <!-- Top Nav PC-->
+    <div class="topnav d-none d-lg-block position-fixed">
+        <div class="nav_desktop d-flex justify-content-around align-items-center m-auto">
+            <div class="brand">
+                <a href="/">
+                    <img class="logo_desktop" src="./assets/img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="d-flex align-items-center justify-content-around">
+                <div class="dropdown">
+                    <button class="btn_square_gradient text-light dropdown-toggle" type="button" id="LittleTheory"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        A Little Theory
+                    </button>
+                    <ul class="dropdown-menu glassy_dropdown" aria-labelledby="LittleTheory">
+                        <li><a class="dropdown-item" href="#">General Rules</a></li>
+                        <li><a class="dropdown-item" href="#">Speed</a></li>
+                        <li><a class="dropdown-item" href="#">Motorway - Expressway</a></li>
+                        <li><a class="dropdown-item" href="#">Railroads crossing</a></li>
+                        <li><a class="dropdown-item" href="#">Drinking and driving</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn_square_gradient text-light" type="button">
+                    <a href="/home.html" class="text-light mx-2">Road signs</a>
+                </button>
+                <button class="btn_square_gradient text-light" type="button">
+                    <a href="/home.html" class="text-light mx-2">Tips And Tricks</a>
+                </button>
+
+                <div class="dropdown">
+                    <button class="btn_square_gradient text-light dropdown-toggle" type="button" id="LittleTheory"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Customer Service
+                    </button>
+                    <ul class="dropdown-menu glassy_dropdown" aria-labelledby="LittleTheory">
+                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn_square_gradient text-light" type="button">
+                    <a href="https://dvgroups.ca/projects/dk/DDL/login.html" class="text-light mx-2">Log In</a>
+                </button>
+                <button class="btn_square_gradient text-light" type="button">
+                    <a href="/register.html" class="text-light mx-2">Sign Up</a>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="btn_square_gradient text-light dropdown-toggle" type="button" id="dropdownLanguage"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span><img class="flag_icon" src="./assets/img/dk.svg" alt=""></span>
+                    <span class="mx-2">
+                        Danish
+                    </span>
+                </button>
+                <ul class="dropdown-menu glassy_dropdown" aria-labelledby="dropdownLanguage">
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <span>
+                                <img class="flag_icon" src="./assets/img/dk.svg" alt="">
+                            </span>
+                            <span class="mx-2">
+                                Danish
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <span>
+                                <img class="flag_icon" src="./assets/img/ir.svg" alt="">
+                            </span>
+                            <span class="ms-2">
+                                Persian
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <span>
+                                <img class="flag_icon" src="./assets/img/gb.svg" alt="">
+                            </span>
+                            <span class="ms-2">
+                                English
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="topnav_blur d-none d-lg-block position-fixed"></div>
+
+    <!-- Top Nav Smart-->
+    <nav class="navbar-mobile d-lg-none">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+
+                    <div class="logo_in_menu mb-5">
+                        <a href="https://dvgroups.ca/projects/dk/DDL/">
+                            <img class="logo_mobile" src="./assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="accordion accordion_menu mx-auto" id="menu1">
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header bg-transparent" id="heading1">
+                                <button
+                                    class="accordion-button btn_square_gradient collapsed text-light bg-transparent d-flex justify-content-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                    aria-expanded="false" aria-controls="collapse1">
+                                    A Little Theory
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                                data-bs-parent="#menu1">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled text-center" aria-labelledby="">
+                                        <li><a class="text-light" href="#">General Rules</a></li>
+                                        <li><a class="text-light" href="#">Speed</a></li>
+                                        <li><a class="text-light" href="#">Motorway - Expressway</a></li>
+                                        <li><a class="text-light" href="#">Railroads crossing</a></li>
+                                        <li><a class="text-light" href="#">Drinking and driving</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_square_gradient text-light" type="button">
+                        <a href="/home.html" class="text-light mx-2">Road signs</a>
+                    </button>
+                    <button class="btn_square_gradient text-light" type="button">
+                        <a href="/home.html" class="text-light mx-2">Tips And Tricks</a>
+                    </button>
+
+                    <div class="accordion accordion_menu mx-auto" id="menu2">
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header bg-transparent" id="heading2">
+                                <button
+                                    class="accordion-button btn_square_gradient collapsed text-light bg-transparent d-flex justify-content-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                    aria-expanded="false" aria-controls="collapse2">
+                                    Customer Service
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                data-bs-parent="#menu2">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled text-center" aria-labelledby="">
+                                        <li><a class="text-light" href="#">Contact Us</a></li>
+                                        <li><a class="text-light" href="#">FAQ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <button class="btn_square_gradient text-light" type="button">
+                    <a href="https://dvgroups.ca/projects/dk/DDL/login.html" class="text-light mx-2">Log In</a>
+                </button>
+                <button class="btn_square_gradient text-light" type="button">
+                    <a href="/register.html" class="text-light mx-2">Sign Up</a>
+                </button>
+
+
+                <div class="accordion accordion_menu mx-auto" id="menu3">
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header bg-transparent" id="heading3">
+                            <button
+                                class="accordion-button btn_square_gradient collapsed text-light bg-transparent d-flex justify-content-center"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+                                aria-expanded="false" aria-controls="collapse3">
+                                <span><img class="flag_icon" src="./assets/img/dk.svg" alt=""></span>
+                                <span class="ms-1">
+                                    Danish
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                            data-bs-parent="#menu3">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled text-center" aria-labelledby="">
+                                    <li>
+                                        <a class="text-light" href="#">
+                                            <span>
+                                                <img class="flag_icon" src="./assets/img/dk.svg" alt="">
+                                            </span>
+                                            <span class="mx-2">
+                                                Danish
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-light" href="#">
+                                            <span>
+                                                <img class="flag_icon" src="./assets/img/ir.svg" alt="">
+                                            </span>
+                                            <span class="mx-2">
+                                                Persian
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-light" href="#">
+                                            <span>
+                                                <img class="flag_icon" src="./assets/img/gb.svg" alt="">
+                                            </span>
+                                            <span class="mx-2">
+                                                English
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </ul>
+            <a href="https://dvgroups.ca/projects/dk/DDL/v1.2/" class="logo"><img src="./assets/img/logo.png"
+                    alt=""></a>
+        </div>
+    </nav>
+
+
+
+    <!-- Page Content -->
+    <main class="w-100">
+
+        <div class="GeneralRules">
+
+            <img src="./assets/img/general-car.png" alt="" class="w-100">
+            <div class="title text-center text-light mt-5">General Rules</div>
+            <div class="container px-md-5 px-4 p-lg-5 mx-auto m-0">
+                <div class="rule_item text-light mt-5">
+                    <div class="title mb-4">
+                        General speeds
+                    </div>
+                    <ul>
+                        <li>50 km/h within densely built-up area </li>
+                        <li>80 km/h outside of densely built-up area</li>
+                        <li>80 km/h Carriageway</li>
+                        <li>130 km/h Motorway</li>
+                    </ul>
+                </div>
+                <div class="rule_item text-light mt-5">
+                    <div class="title mb-4">
+                        Maximum dimensions of vehicle
+                    </div>
+                    <ul>
+                        <li>All measurements are with or without load </li>
+                        <li>Width: 2.55 metres at the most</li>
+                        <li>Height: 4 metres (measured from road surface)</li>
+                        <li>Length: 12 metres</li>
+                    </ul>
+                </div>
+                <div class="rule_item text-light mt-5">
+                    <div class="title mb-4">
+                        Regulations for towing
+                    </div>
+                    <p>Using your vehicle to tow another vehicle is permitted. The distance between the vehicles may be
+                        four metres at the
+                        most. If the distance is more than two metres, the rope must be clearly marked. The driving
+                        speed may be 30 km/h at the
+                        most. Special regulations apply on motorways.
+                        Warning triangle
+                        With a crash or engine failure when the vehicle is dangerously parked and is a hazard for
+                        traffic, you must immediately
+                        set up the warning triangle on the roadside. On ordinary roads, at least 50 metres from the
+                        vehicle and on motorways at
+                        least 100 metres from the vehicle.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer text-light" id="footer">
+            <div class="footer_info text-light">
+                <div class="row mx-auto container justify-content-around">
+                    <div
+                        class="col-12 col-md-6 col-xl-5 d-flex justify-content-around justify-content-md-start align-items-center">
+                        <a href="/home.html" class="text-light mx-1 mx-md-3 footer_label">Privacy</a>
+                        <a href="/home.html" class="text-light mx-1 mx-md-3 footer_label">Terms and conditions</a>
+                    </div>
+                    <div class="col-12 col-md-1 col-xl-2"></div>
+                    <div
+                        class="social_col col-12 col-md-5 d-flex justify-content-center justify-content-md-end align-items-center">
+                        <span class="footer_label me-3">
+                            FOLLOW US :
+                        </span>
+                        <a href="/" class="text-light mx-2">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="/" class="text-light mx-2">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="/" class="text-light mx-2">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="/" class="text-light mx-2">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                    </div>
+                </div>
+                <p class="copy_right text-center pb-3 mb-0">
+                    © 2023 DLOTT. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
