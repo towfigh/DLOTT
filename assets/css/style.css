@@ -211,6 +211,15 @@ main {
     border: none;
 }
 
+.label_purple_primary {
+    background: #8043F9;
+    border: 2px solid #8043F9;
+    font-size: 12px;
+    width: 105px;
+    line-height: 22px;
+    padding: 5px 5px;
+}
+
 .scroller {
     width: 1.3em;
     height: 1.3em;
@@ -460,7 +469,7 @@ main {
     color: #FFF;
 }
 
-.form-check-input:checked[type=radio] {
+.login-check-input:checked[type=radio] {
     background-image: none;
     border: solid 3px #fff
 }
@@ -796,6 +805,76 @@ main {
     height: 40px;
     border: 2px solid;
 }
+
+
+
+/* *************** */
+/*    TEST PAGE    */
+/* *************** */
+
+.tests_page {
+    background: #081B4B;
+    width: 90%;
+    max-width: 1100px !important;
+    min-height: calc(100vh - 145px);
+}
+
+.question_col {
+    background: #030852;
+    border: 2px solid #8043F9;
+    border-radius: 15px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.test_quastion_answer {
+    background: #030852;
+    border: 2px solid #8043F9;
+    border-radius: 10px;
+}
+
+.test_quastion_answer.active {
+    border: 2px solid #EC4899;
+}
+
+.answer-check-input:checked[type=radio] {
+    background: #8043F9;
+    border: solid 3px #ffffff;
+    filter: brightness(100%);
+    box-shadow: none;
+}
+
+.answer-check-input.active:checked[type=radio] {
+    background: #EC4899;
+    border: solid 3px #ffffff;
+    filter: brightness(100%);
+    box-shadow: none;
+}
+
+.paginate_icon {
+    width: 33px;
+    height: 31px;
+    border-radius: 10px;
+    transition: all .8s;
+    flex-shrink: 0;
+    background: #8043F9;
+    color: #1b1b1b;
+}
+
+.paginate_label {
+    color: #8043F9;
+}
+
+.pagination_holder .paginate_active .paginate_icon {
+    background-color: #EC4899;
+}
+
+.pagination_holder .paginate_active .paginate_label {
+    color: #EC4899;
+}
+
+
+
 
 
 
@@ -1151,6 +1230,10 @@ main {
 
     .faq_accar_body {
         font-size: 12px;
+    }
+
+    .test_answer_radio_holder {
+        width: 100px;
     }
 
 }
