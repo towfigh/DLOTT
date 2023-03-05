@@ -160,21 +160,54 @@ main {
 }
 
 .btn_pill_gradient {
-    background: linear-gradient(83.79deg, #8043F9 2.84%, #FA00C2 96.99%);
+    background: rgba(255, 255, 255, 0);
     font-weight: 600;
     font-size: 12px;
     line-height: 22px;
     border-radius: 40px;
-    padding: 9px 19px;
+    padding: 10px 15px;
+    border: 2px solid #8043F9;
 }
 
-.btn_pill_light {
-    background: rgba(255, 255, 255, 0.3);
-    font-weight: 600;
-    font-size: 15px;
+.btn_pill_gradient:hover {
+    background: linear-gradient(83.79deg, #8043F9 2.84%, #FA00C2 96.99%);
+}
+
+.btn_purple_primary {
+    background: #8043F9;
+    border: 2px solid #8043F9;
+    font-size: 13px;
+    width: 200px;
     line-height: 22px;
-    border-radius: 12px;
-    padding: 5px 10px;
+    padding: 8px 20px;
+}
+
+.btn_purple_secondary {
+    background: transparent;
+    border: 2px solid #8043F9;
+    font-size: 13px;
+    width: 200px;
+    line-height: 22px;
+    padding: 8px 20px;
+}
+
+.btn_success_primary {
+    background: #4CD47C;
+    border: 2px solid #4CD47C;
+    font-size: 13px;
+    width: 200px;
+    line-height: 22px;
+    padding: 8px 20px;
+    border: none;
+}
+
+.btn_failed_primary {
+    background: #C8102E;
+    border: 2px solid #C8102E;
+    font-size: 13px;
+    width: 200px;
+    line-height: 22px;
+    padding: 8px 20px;
     border: none;
 }
 
@@ -196,6 +229,15 @@ main {
     z-index: 5;
 }
 
+.test_icon_success {
+    border: 2px solid #4CD47C;
+    color: #4CD47C;
+}
+
+.test_icon_failed {
+    border: 2px solid #E80000;
+    color: #E80000;
+}
 
 
 /* ********** */
@@ -660,6 +702,104 @@ main {
 }
 
 /* ************* */
+/*   TEST LIST   */
+/* ************* */
+
+.tests_list {
+    background: #081B4B;
+    width: 90%;
+    max-width: 1100px !important;
+    min-height: calc(100vh - 145px);
+}
+
+.tests_list>.title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.test_item_col {
+    max-width: 350px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.test_item_holder {
+    background: #030852;
+    border: 2px solid #8043F9;
+    border-radius: 25px;
+    width: 100%;
+    padding: 15px 15px;
+}
+
+.test_item_holder-pass {
+    border: 2px solid #4CD47C;
+}
+
+.test_item_holder-failed {
+    border: 2px solid #E80000;
+}
+
+.test_item_holder img {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+    max-width: 320px;
+}
+
+.test_item_label {
+    background: #EC4899;
+    top: 25px;
+    left: 25px;
+    font-size: 0.9rem;
+}
+
+.test_item_info button {
+    width: 80%;
+}
+
+.test_item_info span {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+/* *************** */
+/*   TEST RESULT   */
+/* *************** */
+
+.tests_result {
+    background: #081B4B;
+    width: 90%;
+    max-width: 1100px !important;
+    min-height: calc(100vh - 145px);
+}
+
+.tests_result .test_title {
+    font-size: 30px;
+}
+
+.tests_result .test_title_icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.results_item_info button {
+    width: 70%;
+}
+
+.results_item_info span {
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+}
+
+
+
+/* ************* */
 /* Media Queries */
 /* ************* */
 
@@ -714,6 +854,14 @@ main {
         width: 80%;
     }
 
+    .tests_list {
+        width: 80%;
+    }
+
+    .tests_result {
+        width: 80%;
+    }
+
     .detail_sign_holder>p {
         font-size: 15px;
     }
@@ -754,6 +902,14 @@ main {
     }
 
     .signs_details {
+        width: auto
+    }
+
+    .tests_list {
+        width: auto
+    }
+
+    .tests_result {
         width: auto
     }
 
@@ -996,6 +1152,7 @@ main {
     .faq_accar_body {
         font-size: 12px;
     }
+
 }
 
 /* ********** */
