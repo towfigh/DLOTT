@@ -408,7 +408,7 @@ main {
     /* min-height: 100vh; */
 }
 
-.form_page>div.d-felx {
+.form_page>div.d-flex {
     min-height: calc(100vh - 145px);
 }
 
@@ -831,6 +831,7 @@ main {
     background: #030852;
     border: 2px solid #8043F9;
     border-radius: 10px;
+    font-size: 14px;
 }
 
 .test_quastion_answer.active {
@@ -873,8 +874,116 @@ main {
     color: #EC4899;
 }
 
+.question_num_label {
+    width: 40px;
+    height: 37px;
+    background: #EC4899;
+    top: 25px;
+    left: 25px;
+    font-size: 1rem;
+}
 
 
+
+/* ************* */
+/* Answer Reveiw */
+/* ************* */
+
+
+.answer_reveiw {
+    background: #081B4B;
+    width: 90%;
+    max-width: 1100px !important;
+    min-height: calc(100vh - 145px);
+}
+
+.answer_reveiw .answer_title_icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.answer_reveiw .answer_title {
+    font-size: 28px;
+}
+
+.quesiton_image_holder {
+    width: 75%;
+}
+
+.answer_accar {
+    background: #030852;
+    border-radius: 10px !important;
+
+}
+
+.answer_accar_failed {
+    border: 2px solid #E80000 !important;
+}
+
+.answer_accar_failed .answer-check-input.active:checked[type=radio] {
+    background: #E80000;
+    border: solid 3px #ffffff;
+    filter: brightness(100%);
+    box-shadow: none;
+}
+
+.answer_accar_failed .answer_icon {
+    background-color: #E80000;
+}
+
+.answer_accar_success {
+    border: 2px solid #4CD47C !important;
+}
+
+.answer_accar_success .answer-check-input.active:checked[type=radio] {
+    background: #4CD47C;
+    border: solid 3px #ffffff;
+    filter: brightness(100%);
+    box-shadow: none;
+}
+
+.answer_accar_success .answer_icon {
+    background-color: #4CD47C;
+}
+
+.answer_accar_header {
+    transition: all .8s;
+}
+
+.answer_accar_btn::after {
+    display: none;
+}
+
+.answer_icon {
+    width: 33px;
+    height: 31px;
+    border-radius: 10px;
+    transition: all .8s;
+    flex-shrink: 0;
+}
+
+.answer_icon i {
+    transition: all .6s;
+}
+
+.answer_accar_body p {
+    font-size: 12px;
+}
+
+.answer-check-input:disabled {
+    opacity: 1;
+}
+
+.answer-check-input:disabled+label {
+    opacity: 1;
+}
+
+.form-check-input[disabled]~.form-check-label,
+.form-check-input:disabled~.form-check-label {
+    opacity: 1;
+    margin-top: 3px;
+}
 
 
 
@@ -1188,6 +1297,10 @@ main {
 
     .footer_hero {
         height: calc(100vh - 250px);
+    }
+
+    .quesiton_image_holder {
+        width: 100%;
     }
 
 }

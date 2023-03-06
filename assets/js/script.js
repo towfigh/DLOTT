@@ -84,3 +84,39 @@ $('.faq_accar_btn').click(function (e) {
 			.append('<i class="fa-regular fa-plus"></i>');
 	}
 });
+
+// Control the Change of Accardion icon in Answer Review
+$('.answer_accar_btn').click(function (e) {
+	let targetButton;
+
+	// Get the clicked object
+	const clickedItem = e.target;
+
+	// handle clicking from different objects
+	if ($(clickedItem).is('span')) {
+		targetButton = $(clickedItem).parent().parent();
+	} else if ($(clickedItem).is('i')) {
+		targetButton = $(clickedItem).parent().parent().parent();
+	} else if ($(clickedItem).is('button')) {
+		targetButton = $(clickedItem);
+	} else if ($(clickedItem).is('div')) {
+		targetButton = $(clickedItem).parent();
+	} else if ($(clickedItem).is('p')) {
+		targetButton = $(clickedItem).parent().parent();
+	} else if ($(clickedItem).is('input')) {
+		targetButton = $(clickedItem).parent().parent().parent();
+	} else if ($(clickedItem).is('label')) {
+		targetButton = $(clickedItem).parent().parent().parent();
+	}
+
+	// the state of clicked button : open / close
+	const isExpand = targetButton[0].attributes['aria-expanded'].value;
+
+	if (isExpand === 'true') {
+		$(targetButton)
+			.find('.answer_icon i')
+			.css({ transform: 'rotate(-180deg)' });
+	} else {
+		$(targetButton).find('.answer_icon i').css({ transform: 'rotate(0)' });
+	}
+});
