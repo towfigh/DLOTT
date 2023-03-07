@@ -823,8 +823,8 @@ main {
     background: #030852;
     border: 2px solid #8043F9;
     border-radius: 15px;
-    line-height: 35px;
-    font-size: 14px;
+    line-height: 40px;
+    font-size: 18px;
 }
 
 .test_quastion_answer {
@@ -1061,6 +1061,11 @@ main {
     .form_holder {
         margin-top: 10vh;
     }
+
+        .question_col {
+            line-height: 40px;
+            font-size: 18px;
+        }
 
 }
 
