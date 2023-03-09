@@ -405,11 +405,11 @@ main {
 
 .form_page {
     height: max-content;
-    /* min-height: 100vh; */
+    min-height: calc(100vh - 160px);
 }
 
 .form_page>div.d-flex {
-    min-height: calc(100vh - 145px);
+    min-height: calc(100vh - 160px);
 }
 
 .login_logo {
@@ -985,6 +985,92 @@ main {
     margin-top: 3px;
 }
 
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+
+/* *********** */
+/* Image Modal */
+/* *********** */
+
+#testImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#testImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.testImgModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modalImg-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    height: 80vh;
+    background: transparent;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modalImg-content {
+    animation-name: zoomModalImg;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoomModalImg {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.modalImg-close {
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modalImg-close:hover,
+.modalImg-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 
 /* ************* */
@@ -1062,10 +1148,10 @@ main {
         margin-top: 10vh;
     }
 
-        .question_col {
-            line-height: 40px;
-            font-size: 18px;
-        }
+    .question_col {
+        line-height: 40px;
+        font-size: 18px;
+    }
 
 }
 
@@ -1308,6 +1394,12 @@ main {
         width: 100%;
     }
 
+    .modalImg-content {
+        width: 90vw;
+        height: auto;
+        padding-top: 100px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -1353,6 +1445,7 @@ main {
     .test_answer_radio_holder {
         width: 100px;
     }
+
 
 }
 

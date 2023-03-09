@@ -260,7 +260,7 @@
         <!-- Login -->
         <div class="form_page pt-2 pt-xxl-5">
 
-            <div class="d-flex justify-content-center align-items-center h-100 p-2 p-xxl-5">
+            <div class="d-block mx-auto d-lg-flex justify-content-center align-items-center p-3 p-xxl-5">
 
                 <form action="" class="mb-3 mt-5">
                     <div
@@ -277,7 +277,7 @@
                             </div>
                             <div>
                                 <input class="login_input w-100" type="text" name="fullName"
-                                    placeholder="Enter your Full Name" />
+                                    placeholder="Enter your Full Name" required />
                             </div>
                         </div>
                         <div class="mt-3 mt-md-2 mt-xxl-3 w-100 text-light">
@@ -286,7 +286,7 @@
                             </div>
                             <div>
                                 <input class="login_input w-100" type="email" name="email"
-                                    placeholder="Enter your email" />
+                                    placeholder="Enter your email" required />
                             </div>
                         </div>
                         <div class="mt-3 mt-md-2 mt-xxl-3 w-100 text-light">
@@ -295,7 +295,7 @@
                             </div>
                             <div>
                                 <input class="login_input w-100" type="email" name="confirmEmail"
-                                    placeholder="Confirm your email" />
+                                    placeholder="Confirm your email" required />
                             </div>
                         </div>
                         <div class="mt-3 mt-md-2 mt-xxl-3 w-100 text-light">
@@ -304,7 +304,7 @@
                             </div>
                             <div>
                                 <input class="login_input w-100" type="tex" name="mobile"
-                                    placeholder="Enter your Mobile Number" />
+                                    placeholder="Enter your Mobile Number" required />
                             </div>
                         </div>
                         <div class="text-light text-start w-100">
@@ -312,22 +312,22 @@
                             <div class="text-center">
 
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input login-check-input" type="radio" name="plan"
+                                    <input class="form-check-input login-check-input" type="radio" required name="plan"
                                         id="starter" value="Starter">
                                     <label class="form-check-label" for="Starter">Starter</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input login-check-input" type="radio" name="plan"
+                                    <input class="form-check-input login-check-input" type="radio" required name="plan"
                                         id="Permium" value="Permium">
                                     <label class="form-check-label" for="Permium">Permium</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input login-check-input" type="radio" name="plan"
+                                    <input class="form-check-input login-check-input" type="radio" required name="plan"
                                         id="Permium Pro" value="PermiumPro">
                                     <label class="form-check-label" for="Permium Pro">Permium Pro</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input login-check-input" type="radio" name="plan"
+                                    <input class="form-check-input login-check-input" type="radio" required name="plan"
                                         id="Elite" value="Elite">
                                     <label class="form-check-label" for="Elite">Elite</label>
                                 </div>
@@ -335,22 +335,24 @@
                         </div>
                         <div class="mt-3">
                             <div class="form-check text-light">
-                                <input class="form-check-input" type="checkbox" value="" id="agreement">
-                                <label class="form-check-label agreement" for="agreement">
+                                <input class="form-check-input" type="checkbox" value="" id="terms_agreement" required>
+                                <label class="form-check-label agreement" for="terms_agreement">
                                     By creating an account you are agreeing to our
                                     <a href="/" class="link_pink text-decoration-underline">
                                         Terms and Conditions
                                     </a>
                                     and
-                                    <a href="/" class="link_pink text-decoration-underline">Privacy
-                                        Policy
+                                    <a href="/" class="link_pink text-decoration-underline">
+                                        Privacy Policy
                                     </a>
                                 </label>
                             </div>
                         </div>
                         <div class="my-3 my-md-3 my-xxl-5 w-100 text-light">
                             <div>
-                                <button type="submit" class="btn_submit text-light w-100"> Sign Up</button>
+                                <button type="submit" class="btn_submit text-light w-100" id="register_btn">
+                                    Sign Up
+                                </button>
                             </div>
                         </div>
                         <div class="text-light">

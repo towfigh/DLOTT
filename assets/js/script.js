@@ -21,16 +21,36 @@ $(document).ready(function () {
 // Controlling TopNav Opacity Changes
 $(window).scroll(function (event) {
 	var scroll = $(window).scrollTop();
-	if (scroll >= 200) {
-		$('.topnav_blur').css('background-color', 'rgb(0 0 0 / 82%)');
-		$('.topnav_blur').css('filter', 'blur(3px) saturate(180%)');
-		$('.navbar-mobile').css('background-color', 'rgb(0 0 0 / 82%)');
-		$('.glassy_dropdown').css('background-color', 'rgba(255, 255, 255, 0.98)');
+	if (window.innerWidth > 600) {
+		if (scroll >= 130) {
+			$('.topnav_blur').css('background-color', 'rgb(0 0 0 / 82%)');
+			$('.topnav_blur').css('filter', 'blur(3px) saturate(180%)');
+			$('.navbar-mobile').css('background-color', 'rgb(0 0 0 / 82%)');
+			$('.glassy_dropdown').css(
+				'background-color',
+				'rgba(255, 255, 255, 0.98)',
+			);
+		} else {
+			$('.topnav_blur').css('background-color', 'rgba(74, 74, 74, 0.5)');
+			$('.topnav_blur').css('filter', 'blur(0px) saturate(0%)');
+			$('.navbar-mobile').css('background-color', 'rgba(74, 74, 74, 0.5)');
+			$('.glassy_dropdown').css('background-color', 'rgba(255, 255, 255, 0.5)');
+		}
 	} else {
-		$('.topnav_blur').css('background-color', 'rgba(74, 74, 74, 0.5)');
-		$('.topnav_blur').css('filter', 'blur(0px) saturate(0%)');
-		$('.navbar-mobile').css('background-color', 'rgba(74, 74, 74, 0.5)');
-		$('.glassy_dropdown').css('background-color', 'rgba(255, 255, 255, 0.5)');
+		if (scroll >= 20) {
+			$('.topnav_blur').css('background-color', 'rgb(0 0 0 / 82%)');
+			$('.topnav_blur').css('filter', 'blur(3px) saturate(180%)');
+			$('.navbar-mobile').css('background-color', 'rgb(0 0 0 / 82%)');
+			$('.glassy_dropdown').css(
+				'background-color',
+				'rgba(255, 255, 255, 0.98)',
+			);
+		} else {
+			$('.topnav_blur').css('background-color', 'rgba(74, 74, 74, 0.5)');
+			$('.topnav_blur').css('filter', 'blur(0px) saturate(0%)');
+			$('.navbar-mobile').css('background-color', 'rgba(74, 74, 74, 0.5)');
+			$('.glassy_dropdown').css('background-color', 'rgba(255, 255, 255, 0.5)');
+		}
 	}
 });
 
@@ -120,3 +140,16 @@ $('.answer_accar_btn').click(function (e) {
 		$(targetButton).find('.answer_icon i').css({ transform: 'rotate(0)' });
 	}
 });
+
+// Handle Image Modal
+var modal = document.getElementById('testImgModal');
+var img = document.getElementById('testImg');
+var modalImg = document.getElementById('modalImg');
+img.onclick = function () {
+	modal.style.display = 'block';
+	modalImg.src = this.src;
+};
+var span = document.getElementsByClassName('modalImg-close')[0];
+span.onclick = function () {
+	modal.style.display = 'none';
+};
